@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cat Photo App</title>
+    </head>
+    <body style="background-color: wheat;" >
+       <h2>Cat Photo App</h2>
+
+       <main>
+            <h3>Cat Photos</h3>
+            <p style="font: 1em sans-serif;">Click here to view more <a href="#" target="_blank">cat photos</a></p>
+            <div  style="width:800px; margin:0"><img src="assests/cute-cat.jpg" alt="A cute cat"/></div>
+            <div style="width:800px; margin:0 auto; font: 400; font-family: sans-serif;" class="lists">
+                <p>Things cat <em>loves:</em></p>
+                <ul style="list-style-type: square;">
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasgana</li>
+                </ul>
+                <p>Things cat <strong>hates:</strong></p>
+                <ol type="a">
+                    <li>flea treatment</li>
+                    <li>Thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+            <h3>Cat Details</h3>
+            <hr style="background-color: white;"/>
+            <form action="/submit-cat-photo">
+                Cat Photo URL: <input type="tex" placeholder="cat photo URL" required> <br><br>
+                Cat Type: <label for="indoor"><input id="indoor" type="radio" name="indoor_outdoor">indoor</label>
+                <label for="outdoor"><input id="outdoor" type="radio" name="indoor_outdoor">outdoor</label> <br><br>
+                Cat personality: <label for="loving"><input id="loving" type="checkbox" name="personality" checked>Loving</label>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality">Lazy</label>
+                <label for="energetic"><input id="energetic" type="checkbox" name="personality">Energetic</label> <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        <footer style="align-items: center;">
+            <p>No Copyright - <a href="#">mayankmadhav.com</a></p>
+        </footer>
+    </body>
+</html>
